@@ -11,3 +11,5 @@ alacritty: carbonfox on pc and gruvbox on laptop
 ranger: jungle
 
 nvchad: catpuccin on pc and gruvbox on laptop
+
+jetbrains: my_gruvbox with custom colorscheme
