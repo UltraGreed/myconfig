@@ -267,6 +267,11 @@
         <command>pactl set-sink-volume @DEFAULT_SINK@ -5%</command>
       </action>
     </keybind>
+    <keybind key="W-Escape">
+        <action name="Execute">
+            <command>rofi -show</command>
+        </action>
+    </keybind>
   </keyboard>
   <!-- Keybindings for window switching with the arrow keys -->
   <mouse>

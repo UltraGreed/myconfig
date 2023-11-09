@@ -4,9 +4,9 @@
 
 <menu id="root-menu" label="Openbox 3">
   <separator label="Applications" />
-  <item label="Rxvt Unicode">
+  <item label="Alacritty">
     <action name="Execute">
-      <command>urxvt</command>
+      <command>alacritty</command>
     </action>
   </item>
   <item label="Firefox">
