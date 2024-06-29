@@ -13,3 +13,13 @@ ranger: jungle
 nvchad: catpuccin on pc and gruvbox on laptop
 
 jetbrains: my_gruvbox with custom colorscheme
+
+# Keyboards
+- English basic
+![image](keyboards/us-basic.png)
+- English shift
+![image](keyboards/us-shift.png)
+- Russian basic
+![image](keyboards/ru-basic.png)
+- Russian shift
+![image](keyboards/ru-shift.png)
