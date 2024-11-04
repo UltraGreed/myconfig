@@ -11,8 +11,8 @@ read -p $'Replace ranger config?\n[Y/y] for yes anything else for no: ' -n 1 -r
 echo  
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    rm ranger/*
-    cp ~/.config/ranger/* ranger
+    rm -r ranger/*
+    cp -r ~/.config/ranger/* ranger
 fi
 
 read -p $'Replace alacritty config?\n[Y/y] for yes anything else for no: ' -n 1 -r
@@ -20,7 +20,7 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     rm alacritty/*
-    cp ~/.config/alacritty/alacritty.yml alacritty
+    cp ~/.config/alacritty/alacritty.toml alacritty
 fi
 
 
@@ -29,7 +29,15 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     rm -r nvim/*
-    cp -r ~/.config/nvim/lua/custom/* nvim
+    cp -r ~/.config/nvim/* nvim
 fi
 
+
+read -p $'Replace tmux config?\n[Y/y] for yes anything else for no: ' -n 1 -r
+echo  
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    rm -r tmux/*
+    cp -r ~/.config/tmux/tmux.conf tmux
+fi
 

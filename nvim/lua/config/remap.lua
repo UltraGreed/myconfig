@@ -13,7 +13,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- space-p pastes over selection without losing buffer
--- vim.keymap.set("x", "<leader>p", "\"_dP")
+vim.keymap.set("x", "<leader>p", "\"_dP")
 
 -- yank with space to use system buffer
 vim.keymap.set("n", "<leader>y", "\"+y")
@@ -24,22 +24,27 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 vim.keymap.set("n", "<leader>d", "\"_d")
 vim.keymap.set("v", "<leader>d", "\"_d")
 
--- disables Q
+-- disables Q - Ex mode (what?)
 vim.keymap.set("n", "Q", "<nop>")
+
+-- disables ZZ - save and close
+vim.keymap.set("n", "ZZ", "<nop>")
+
+-- disables q: - vim command line history
+vim.keymap.set("n", "q:", "<nop>")
+
+-- disables q/ q? - vim search history
+vim.keymap.set("n", "q/", "<nop>")
+vim.keymap.set("n", "q?", "<nop>")
 
 -- tmux call
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
--- format on ctrl-alt-l
-vim.keymap.set("n", "<C-A-l>", function()
-    vim.lsp.buf.format()
-end)
-
 -- quickfix list
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
-vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
-vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+vim.keymap.set("n", "<C-m>", "<cmd>cnext<CR>zz")
+vim.keymap.set("n", "<C-i>", "<cmd>cprev<CR>zz")
+vim.keymap.set("n", "<leader>m", "<cmd>lnext<CR>zz")
+vim.keymap.set("n", "<leader>i", "<cmd>lprev<CR>zz")
 
 -- substitute on space-s
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")

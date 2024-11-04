@@ -1,6 +1,6 @@
 collection of different linux configurations which I stole over the internet and adjusted for personal usage
 
-using nvchad as base for nvim config, therefore nvim folder has only nvchad config files
+neovim configured with help of ThePrimeAgen guide videos
 
 I don't want to create smart system to handle different themes, so I'm just saving their names here to not forget 
 
@@ -10,10 +10,9 @@ alacritty: carbonfox on pc and gruvbox on laptop
 
 ranger: jungle
 
-nvchad: catpuccin on pc and gruvbox on laptop
-
 jetbrains: my_gruvbox with custom colorscheme
 
+keyboard configs should be placed in /usr/share/X11/xdb/symbols
 # Keyboards
 - English basic
 ![image](keyboards/us-basic.png)
