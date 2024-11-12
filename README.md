@@ -12,7 +12,7 @@ ranger: jungle
 
 jetbrains: my_gruvbox with custom colorscheme
 
-keyboard configs should be placed in /usr/share/X11/xdb/symbols
+keyboard configs should be placed in /usr/share/X11/xkb/symbols
 # Keyboards
 - English basic
 ![image](keyboards/us-basic.png)
