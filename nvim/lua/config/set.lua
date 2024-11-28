@@ -28,3 +28,7 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "100"
 
 vim.g.mapleader = " "
+
+vim.opt.title = true
+-- vim.opt.titlelen = 0 -- do not shorten title
+-- vim.opt.titlestring = 'nvim %{expand("%:p")}'
