@@ -41,3 +41,10 @@ then
     cp -r ~/.config/tmux/tmux.conf tmux
 fi
 
+read -p $'Replace bash config?\n[Y/y] for yes anything else for no: ' -n 1 -r
+echo  
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    rm -r bash/*
+    cp -r ~/.local/bash/* bash
+fi
