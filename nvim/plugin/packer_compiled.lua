@@ -115,7 +115,7 @@ _G.packer_plugins = {
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
   gruvbox = {
-    config = { "\27LJ\2\n°\3\0\0\4\0\v\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0024\3\0\0=\3\6\0024\3\0\0=\3\a\2B\0\2\0016\0\b\0009\0\t\0'\2\n\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\bvim\14overrides\22palette_overrides\vitalic\1\0\5\nfolds\2\14operators\1\rcomments\2\remphasis\2\fstrings\2\1\0\16\14undercurl\2\14underline\2\21transparent_mode\1\19invert_tabline\1\17dim_inactive\1\finverse\2\14overrides\0\22palette_overrides\0\vitalic\0\25invert_intend_guides\1\17invert_signs\1\21invert_selection\1\18strikethrough\2\rcontrast\5\20terminal_colors\2\tbold\2\nsetup\fgruvbox\frequire\0" },
+    config = { "\27LJ\2\n°\3\0\0\4\0\v\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0024\3\0\0=\3\6\0024\3\0\0=\3\a\2B\0\2\0016\0\b\0009\0\t\0'\2\n\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\bvim\14overrides\22palette_overrides\vitalic\1\0\5\fstrings\2\remphasis\2\rcomments\2\14operators\1\nfolds\2\1\0\16\21transparent_mode\1\14underline\2\14undercurl\2\22palette_overrides\0\14overrides\0\rcontrast\5\tbold\2\20terminal_colors\2\vitalic\0\18strikethrough\2\21invert_selection\1\17invert_signs\1\25invert_intend_guides\1\finverse\2\17dim_inactive\1\19invert_tabline\1\nsetup\fgruvbox\frequire\0" },
     loaded = true,
     path = "/home/ultragreed/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
@@ -204,14 +204,14 @@ time([[Defining packer_plugins]], false)
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
+-- Config for: gruvbox
+time([[Config for gruvbox]], true)
+try_loadstring("\27LJ\2\n°\3\0\0\4\0\v\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0024\3\0\0=\3\6\0024\3\0\0=\3\a\2B\0\2\0016\0\b\0009\0\t\0'\2\n\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\bvim\14overrides\22palette_overrides\vitalic\1\0\5\fstrings\2\remphasis\2\rcomments\2\14operators\1\nfolds\2\1\0\16\21transparent_mode\1\14underline\2\14undercurl\2\22palette_overrides\0\14overrides\0\rcontrast\5\tbold\2\20terminal_colors\2\vitalic\0\18strikethrough\2\21invert_selection\1\17invert_signs\1\25invert_intend_guides\1\finverse\2\17dim_inactive\1\19invert_tabline\1\nsetup\fgruvbox\frequire\0", "config", "gruvbox")
+time([[Config for gruvbox]], false)
 -- Config for: xkbswitch.nvim
 time([[Config for xkbswitch.nvim]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14xkbswitch\frequire\0", "config", "xkbswitch.nvim")
 time([[Config for xkbswitch.nvim]], false)
--- Config for: gruvbox
-time([[Config for gruvbox]], true)
-try_loadstring("\27LJ\2\n°\3\0\0\4\0\v\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0024\3\0\0=\3\6\0024\3\0\0=\3\a\2B\0\2\0016\0\b\0009\0\t\0'\2\n\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\bvim\14overrides\22palette_overrides\vitalic\1\0\5\nfolds\2\14operators\1\rcomments\2\remphasis\2\fstrings\2\1\0\16\14undercurl\2\14underline\2\21transparent_mode\1\19invert_tabline\1\17dim_inactive\1\finverse\2\14overrides\0\22palette_overrides\0\vitalic\0\25invert_intend_guides\1\17invert_signs\1\21invert_selection\1\18strikethrough\2\rcontrast\5\20terminal_colors\2\tbold\2\nsetup\fgruvbox\frequire\0", "config", "gruvbox")
-time([[Config for gruvbox]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

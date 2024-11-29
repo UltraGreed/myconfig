@@ -6,23 +6,20 @@ lsp_zero.setup_servers({
     'zls',  -- zig LSP
 
     'ruff', -- python linter and formatter
-    -- 'pylsp', -- only used as LSP interface for mypy - type checker
-    -- 'pyre', -- type checker
-    'pyright',         -- type checker
-    -- 'jedi_language_server', -- completions
+    'pyright', -- type checker
 
     -- 'clangd',               -- c/cpp LSP
 
-    'cssls',                -- css/html LSPs
+    'cssls', -- css/html LSPs
     'html',
 
-    'tsserver', -- typescript LSP
+    'ts_ls',  -- typescript LSP
 
-    'hls', -- haskell
+    'hls',    -- haskell
 
-    'lua_ls',   -- lua LSP
+    'lua_ls', -- lua LSP
 
-    'taplo'     -- toml LSP
+    'taplo'   -- toml LSP
 })
 
 
@@ -49,7 +46,8 @@ lsp_zero.on_attach(function(client, bufnr)
     vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
     vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
     vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
-    vim.keymap.set("n", "<C-A-l>", function() vim.lsp.buf.format() end, opts)
+    vim.keymap.set("n", "<leader>o", function() vim.lsp.buf.format() end, opts)
+
 
     -- Show hint in floating window on hover
     vim.api.nvim_create_autocmd("CursorHold", {
@@ -107,4 +105,3 @@ lsp_zero.setup()
 vim.diagnostic.config({
     virtual_text = true
 })
-
